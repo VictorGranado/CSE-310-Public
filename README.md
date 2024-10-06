@@ -4,9 +4,16 @@ This data analysis application is designed to allow users to import datasets, pe
 
 The purpose of this software is to help users perform basic data analysis tasks with minimal effort, giving them the ability to visualize and clean their data, and then export the cleaned data for further use.
 
-[Software Demo Video](https://www.youtube.com/watch?v=UecK5bTThUU)
+[Software Demo Video](https://www.youtube.com/watch?v=SJv1fVNWZ8Y)
 
 # Development Environment
 
 - **Code Editor**: Visual Studio Code (VSCode) with the Python extension for code editing and execution.
 - **Python Version**: 3.x (Python was chosen for its simplicity and its powerful libraries for data analysis such as Pandas, NumPy, and Matplotlib).
+
+Usefull websits:
+Pandas Documentation
+NumPy Documentation
+Matplotlib Documentation
+Python Documentation
+GitHub Docs
