@@ -1,0 +1,26 @@
+# Overview
+The File Encryption and Decryption Tool is a C# console application designed to help users securely encrypt and decrypt files using AES encryption. It allows users to select a file, enter a password, and either encrypt or decrypt the file accordingly. This tool ensures data confidentiality by making sure that only the correct password can decrypt the file.
+
+The purpose of this tool is to provide an easy-to-use interface for encrypting and decrypting sensitive data, making it secure to store and share files.
+
+[Software Demo Video](https://www.youtube.com/watch?v=Ml0BQdTmJ9s)
+
+# Features
+Encrypt Files: Encrypt files with AES encryption using a password.
+Decrypt Files: Decrypt encrypted files with the correct password.
+Password Protection: Ensure encrypted files are accessible only with the correct password.
+Error Handling: Handles incorrect password inputs and provides feedback for encryption/decryption errors.
+File Management: Decrypted files are saved without the .enc extension for easy access.
+
+# Development Environment
+Code Editor: Visual Studio Code (VSCode), Visual Studio, or any C# IDE.
+C# Version: .NET Core or .NET 5.0 or later.
+Libraries Used:
+System.Security.Cryptography for AES encryption/decryption.
+System.IO for file handling.
+System for console input/output.
+
+# Useful Resources
+C# Documentation
+AES Encryption Overview
+Cryptography in .NET

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace FileEncryptionApp
 {
@@ -6,28 +6,45 @@ namespace FileEncryptionApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the File Encryption and Decryption Tool.");
-            Console.WriteLine("Choose an option: \n1. Encrypt a file\n2. Decrypt a file");
-            string choice = Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("\nWelcome to the File Encryption and Decryption Tool.");
+                Console.WriteLine("Choose an option:");
+                Console.WriteLine("1. Encrypt a file");
+                Console.WriteLine("2. Decrypt a file");
+                Console.WriteLine("3. Exit");
+                Console.Write("Enter your choice: ");
+                string choice = Console.ReadLine();
 
-            Console.WriteLine("Enter the file path:");
-            string filePath = Console.ReadLine();
-            Console.WriteLine("Enter a password for encryption/decryption:");
-            string password = Console.ReadLine();
+                if (choice == "1")
+                {
+                    Console.Write("Enter the file path to encrypt: ");
+                    string filePath = Console.ReadLine();
+                    Console.Write("Enter a password for encryption: ");
+                    string password = Console.ReadLine();
 
-            if (choice == "1")
-            {
-                FileEncryptor encryptor = new FileEncryptor();
-                encryptor.Encrypt(filePath, password);
-            }
-            else if (choice == "2")
-            {
-                FileDecryptor decryptor = new FileDecryptor();
-                decryptor.Decrypt(filePath, password);
-            }
-            else
-            {
-                Console.WriteLine("Invalid choice. Exiting program.");
+                    FileEncryptor encryptor = new FileEncryptor();
+                    encryptor.Encrypt(filePath, password);
+                }
+                else if (choice == "2")
+                {
+                    Console.Write("Enter the file path to decrypt: ");
+                    string filePath = Console.ReadLine();
+                    Console.Write("Enter the password for decryption: ");
+                    string password = Console.ReadLine();
+
+                    FileDecryptor decryptor = new FileDecryptor();
+                    decryptor.Decrypt(filePath, password);
+                }
+                else if (choice == "3")
+                {
+                    Console.WriteLine("Exiting program. Goodbye!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid choice. Please try again.");
+                }
             }
         }
     }

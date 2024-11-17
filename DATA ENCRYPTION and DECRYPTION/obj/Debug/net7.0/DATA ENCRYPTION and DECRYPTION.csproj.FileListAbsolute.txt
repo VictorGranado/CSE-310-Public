@@ -1,0 +1,15 @@
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\obj\Debug\net7.0\DATA ENCRYPTION and DECRYPTION.csproj.AssemblyReference.cache
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\obj\Debug\net7.0\DATA ENCRYPTION and DECRYPTION.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\obj\Debug\net7.0\DATA ENCRYPTION and DECRYPTION.AssemblyInfoInputs.cache
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\obj\Debug\net7.0\DATA ENCRYPTION and DECRYPTION.AssemblyInfo.cs
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\obj\Debug\net7.0\DATA ENCRYPTION and DECRYPTION.csproj.CoreCompileInputs.cache
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\bin\Debug\net7.0\DATA ENCRYPTION and DECRYPTION.exe
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\bin\Debug\net7.0\DATA ENCRYPTION and DECRYPTION.deps.json
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\bin\Debug\net7.0\DATA ENCRYPTION and DECRYPTION.runtimeconfig.json
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\bin\Debug\net7.0\DATA ENCRYPTION and DECRYPTION.dll
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\bin\Debug\net7.0\DATA ENCRYPTION and DECRYPTION.pdb
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\obj\Debug\net7.0\DATA ENCRYPTION and DECRYPTION.dll
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\obj\Debug\net7.0\refint\DATA ENCRYPTION and DECRYPTION.dll
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\obj\Debug\net7.0\DATA ENCRYPTION and DECRYPTION.pdb
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\obj\Debug\net7.0\DATA ENCRYPTION and DECRYPTION.genruntimeconfig.cache
+C:\Users\victo\OneDrive\Documents\CSE 310\DATA ENCRYPTION and DECRYPTION\obj\Debug\net7.0\ref\DATA ENCRYPTION and DECRYPTION.dll

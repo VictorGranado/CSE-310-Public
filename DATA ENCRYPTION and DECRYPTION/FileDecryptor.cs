@@ -13,26 +13,46 @@ namespace FileEncryptionApp
 
         public override void Decrypt(string filePath, string password)
         {
-            byte[] key = GenerateKeyFromPassword(password);
-
-            using (FileStream fs = new FileStream(filePath, FileMode.Open))
+            try
             {
-                byte[] iv = new byte[16];
-                fs.Read(iv, 0, iv.Length);
+                byte[] key = GenerateKeyFromPassword(password);
 
-                using (Aes aes = Aes.Create())
+                using (FileStream fs = new FileStream(filePath, FileMode.Open))
                 {
-                    aes.Key = key;
-                    aes.IV = iv;
+                    byte[] iv = new byte[16];
+                    int bytesRead = fs.Read(iv, 0, iv.Length);
 
-                    using (CryptoStream cs = new CryptoStream(fs, aes.CreateDecryptor(), CryptoStreamMode.Read))
-                    using (FileStream fsOutput = new FileStream(filePath.Replace(".enc", ""), FileMode.Create))
+                    if (bytesRead < iv.Length)
                     {
-                        cs.CopyTo(fsOutput);
+                        throw new InvalidDataException("File is corrupted or not encrypted properly.");
+                    }
+
+                    using (Aes aes = Aes.Create())
+                    {
+                        aes.Key = key;
+                        aes.IV = iv;
+
+                        using (CryptoStream cs = new CryptoStream(fs, aes.CreateDecryptor(), CryptoStreamMode.Read))
+                        using (FileStream fsOutput = new FileStream(filePath.Replace(".enc", ""), FileMode.Create))
+                        {
+                            cs.CopyTo(fsOutput);
+                        }
                     }
                 }
+                Console.WriteLine("File decrypted successfully.");
             }
-            Console.WriteLine("File decrypted successfully.");
+            catch (CryptographicException)
+            {
+                Console.WriteLine("Decryption failed. The password may be incorrect or the file is corrupted.");
+            }
+            catch (IOException ex)
+            {
+                Console.WriteLine($"An I/O error occurred: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+            }
         }
     }
 }
