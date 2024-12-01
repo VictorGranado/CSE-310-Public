@@ -6,25 +6,25 @@ The purpose of this project is to simplify the management of hydroponic systems 
 [Software Demo Video](https://www.youtube.com/watch?v=4ApJ5mPsqtc)  
 
 # Features  
-- **Real-time Monitoring**: Displays temperature, humidity, and water level on an LCD and web interface.  
-- **Web Dashboard**: Interactive dashboard hosted on the ESP32's web server to visualize sensor data in real time.  
-- **Temperature and Humidity Control**: Automatically activates a fan or water atomizer based on sensor readings.  
-- **Ultrasonic Water Level Sensor**: Monitors tank water level and calculates percentage for visual and remote display.  
-- **Wi-Fi Connectivity**: Remote monitoring and control via a web browser.  
-- **Error Handling**: Built-in error messages for sensor malfunctions.  
-- **Interactive LCD Display**: Real-time updates for local system status.  
+- Real-time Monitoring: Displays temperature, humidity, and water level on an LCD and web interface.  
+- Web Dashboard and Mobile App: Interactive dashboard hosted on the ESP32's web server to visualize sensor data in real time and mobile app data transmission.  
+- Temperature and Humidity Control: Automatically activates a fan or water atomizer based on sensor readings.  
+- Ultrasonic Water Level Sensor: Monitors tank water level and calculates percentage for visual and remote display.  
+- Wi-Fi Connectivity: Remote monitoring and control via a web browser.  
+- Error Handling: Built-in error messages for sensor malfunctions.  
+- Interactive LCD Display: Real-time updates for local system status.  
 
 # Development Environment  
-- **Code Editor**: Arduino IDE for programming the ESP32.  
-- **ESP32 Board**: ESP32-WROOM-32 microcontroller.  
-- **Programming Language**: C++ (Arduino Framework).  
-- **Hardware Components**:  
+- Code Editor: Arduino IDE for programming the ESP32.  
+- ESP32 Board: ESP32-WROOM-32 microcontroller.  
+- Programming Language: C++ (Arduino Framework).  
+- Hardware Components:  
   - ESP32 microcontroller  
   - DHT11 sensor for temperature and humidity  
   - Ultrasonic sensor for water level measurement  
   - LiquidCrystal_I2C for LCD display  
   - Fan and water atomizer for environmental control  
-- **Libraries Used**:  
+- Libraries Used:  
   - `Wire.h` and `LiquidCrystal_I2C.h` for I2C communication with the LCD.  
   - `DHT.h` for temperature and humidity sensor integration.  
   - `WiFi.h` and `WebServer.h` for Wi-Fi connectivity and web server functionality.  
@@ -45,4 +45,3 @@ The purpose of this project is to simplify the management of hydroponic systems 
 7. Upload the code to the ESP32 board.  
 8. Open the Serial Monitor at 115200 baud rate to verify successful connection and IP address.  
 9. Access the web dashboard by entering the ESP32's IP address in your browser.  
-
